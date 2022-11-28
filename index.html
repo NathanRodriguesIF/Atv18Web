@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Jogo da velha</h1>
+    </header>
+    <div class="centro">
+        <nav>
+            <p class="placartxt">Placar</p>
+            <div class="placarblock placarblock1">
+                <p class="placarl">X</p>
+                <p class="placarn" id="placarX">0</p>
+            </div>
+            <div class="placarblock">
+                <p class="placarl">O</p>
+                <p class="placarn" id="placarO">0</p>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <aside>
+                    <div class="quadrados" id="N1" onclick="clicar1()">
+                        <span id="n1" class="contquadrado" onclick="escrever1()"></span>
+                    </div>
+                    <div class="quadrados" onclick="clicar2()">
+                        <span id="n2" class="contquadrado" onclick="escrever2()"></span>
+                    </div>
+                    <div class="quadrados" onclick="clicar3()">
+                        <span id="n3" class="contquadrado" onclick="escrever3()"></span>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="quadrados" onclick="clicar4()">
+                        <span id="n4" class="contquadrado" onclick="escrever4()"></span>
+                    </div>
+                    <div class="quadrados" onclick="clicar5()">
+                        <span id="n5" class="contquadrado" onclick="escrever5()"></span>
+                    </div>
+                    <div class="quadrados" onclick="clicar6()">
+                        <span id="n6" class="contquadrado" onclick="escrever6()"></span>
+                    </div>
+                </aside>
+                <aside>
+                    <div class="quadrados" onclick="clicar7()">
+                        <span id="n7" class="contquadrado" onclick="escrever7()"></span>
+                    </div>
+                    <div class="quadrados" onclick="clicar8()">
+                        <span id="n8" class="contquadrado" onclick="escrever8()"></span>
+                    </div>
+                    <div class="quadrados" onclick="clicar9()">
+                        <span id="n9" class="contquadrado" onclick="escrever9()"></span>
+                    </div>
+                </aside>
+            </section>
+        </main>
+    </div>
+    <footer id="footer">
+        <p class="select">Selecione um para começar</p>
+        <input type="button" value="X" class="botoes botao1" id="X" onclick="select1()">
+        <input type="button" value="O" class="botoes" id="O" onclick="select2()">
+    </footer>
+    <script src="scipt.js"></script>
+</body>
+</html>
